@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float velocidad = 5f;
-    public float fuerzaSalto = 8f;
+    public float fuerzaSalto = 5f;
 
     private Rigidbody2D rb;
 
