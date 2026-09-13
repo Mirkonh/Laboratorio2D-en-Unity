@@ -5,15 +5,23 @@ public class WinZone : MonoBehaviour
 
 {
 
+public GameObject winPanel;
+
+
 private void OnTriggerEnter2D(Collider2D other)
 
 {
+
+Debug.Log("Victoria activada");
+ 
 
 if (other.CompareTag("Player"))
 
 {
 
-Debug.Log("GANASTE");
+winPanel.SetActive(true);
+
+Time.timeScale = 0f;
 
 }
 
